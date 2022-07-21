@@ -1,0 +1,42 @@
+﻿@model OurWebSite.Models.Date
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Date</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DateNome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateNome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiaChuvoso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiaChuvoso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiaEnsolarado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiaEnsolarado)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
